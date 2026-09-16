@@ -111,15 +111,6 @@ ol.bibliography {
       line-height: 1.4;
     }
 
-    .btn {
-      margin-top: 1.4em;
-      color: #0a345c;
-      background: #c5e8fb;
-
-      &:hover {
-        background: #ffffff;
-      }
-    }
   }
 
   .mosaic-header__eyebrow {
@@ -153,33 +144,20 @@ ol.bibliography {
     line-height: 1.6;
   }
 
-  .mosaic-pill-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.65em;
-    margin: 0 auto 3em;
-
-    span {
-      padding: 0.45em 0.85em;
-      color: #145f9c;
-      background: var(--mosaic-mist);
-      border: 1px solid #c9e1f2;
-      border-radius: 999px;
-      font-size: 0.82em;
-      font-weight: 700;
-      letter-spacing: 0.015em;
-    }
-  }
-
   .mosaic-workflow {
     margin: 3em 0 1.5em;
 
     img {
+      display: block;
       width: 100%;
       padding: 0;
       border-radius: 18px;
       box-shadow: 0 20px 45px rgba(10, 40, 76, 0.18);
+    }
+
+    a:focus-visible img {
+      outline: 3px solid var(--mosaic-blue);
+      outline-offset: 4px;
     }
 
     figcaption {
