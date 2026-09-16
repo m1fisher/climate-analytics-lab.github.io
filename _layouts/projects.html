@@ -33,10 +33,12 @@ layout: default
             </aside>
           {% endif %}
           
+          {% if page.featured_figure.image or page.featured_figure.caption %}
           <figure style="width: 500px" class="align-center">
             {% if page.featured_figure.image %} <img src="{{ page.featured_figure.image | relative_url }}" alt=""> {% endif %}
             {% if page.featured_figure.caption %} <figcaption> {{ page.featured_figure.caption | markdownify }} </figcaption> {% endif %}
           </figure> 
+          {% endif %}
 
           {{ content }}
 
@@ -116,4 +118,3 @@ layout: default
       </div>
     {% endif %}
   </div>
-  
