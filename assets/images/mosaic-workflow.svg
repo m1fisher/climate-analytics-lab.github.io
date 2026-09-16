@@ -46,11 +46,11 @@
   <text x="120" y="216" fill="#11375a" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">Evidence</text>
   <text x="82" y="262" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Observations</text>
   <text x="82" y="289" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">MODIS · ARM · ERA5</text>
-  <text x="82" y="312" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">LASSO · in-situ data</text>
+  <text x="82" y="312" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">in-situ data</text>
   <line x1="82" y1="340" x2="248" y2="340" stroke="#dae7f3"/>
-  <text x="82" y="375" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Fine-scale models</text>
-  <text x="82" y="402" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">ClimSim and process-level</text>
-  <text x="82" y="425" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">training cases</text>
+  <text x="82" y="375" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">High-res simulations</text>
+  <text x="82" y="402" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">ClimSim · LASSO</text>
+  <text x="82" y="425" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">simulation output</text>
 
   <!-- Discovery card -->
   <g filter="url(#shadow)">
