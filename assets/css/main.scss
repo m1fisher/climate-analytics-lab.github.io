@@ -111,6 +111,14 @@ ol.bibliography {
       line-height: 1.4;
     }
 
+    > p:last-child {
+      max-width: none;
+
+      @include breakpoint($large) {
+        white-space: nowrap;
+      }
+    }
+
   }
 
   .mosaic-header__eyebrow {
