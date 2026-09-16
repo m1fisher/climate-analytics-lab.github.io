@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
   <title id="title">The MOSAIC research loop</title>
   <desc id="desc">Observations and high-resolution simulations feed an agentic discovery system. Candidate equations pass physical checks, are implemented in JAX-GCM, calibrated and evaluated, and the results guide the next discovery cycle and future observations.</desc>
   <defs>

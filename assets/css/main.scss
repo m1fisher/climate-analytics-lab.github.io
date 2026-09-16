@@ -149,15 +149,12 @@ ol.bibliography {
 
     img {
       display: block;
+      flex: 0 0 100%;
       width: 100%;
+      height: auto;
       padding: 0;
       border-radius: 18px;
       box-shadow: 0 20px 45px rgba(10, 40, 76, 0.18);
-    }
-
-    a:focus-visible img {
-      outline: 3px solid var(--mosaic-blue);
-      outline-offset: 4px;
     }
 
     figcaption {
