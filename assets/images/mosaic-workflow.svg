@@ -1,95 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1230" role="img" aria-labelledby="title desc">
-  <title id="title">From observations to interpretable climate physics</title>
-  <desc id="desc">The MOSAIC research loop: evidence from observations and fine-scale models leads to agentic equation discovery, differentiable JAX-GCM integration, and evaluation. Results feed back into the next experiment, while uncertainty gradients can guide future observations.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">The MOSAIC research loop</title>
+  <desc id="desc">Observations and high-resolution simulations feed an agentic discovery system. Candidate equations pass physical checks, are implemented in JAX-GCM, calibrated and evaluated, and the results guide the next discovery cycle and future observations.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#081f3b"/>
       <stop offset="0.55" stop-color="#0d3c6a"/>
       <stop offset="1" stop-color="#14558c"/>
     </linearGradient>
-    <linearGradient id="feedback" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#69b9e9"/>
-      <stop offset="1" stop-color="#a6baf4"/>
+      <stop offset="1" stop-color="#90bcf7"/>
     </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#04142a" flood-opacity="0.35"/>
+    </filter>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0 0 L10 5 L0 10 Z" fill="#8ed3fa"/>
+      <path d="M0,0 L10,5 L0,10 Z" fill="#86c8f2"/>
     </marker>
     <marker id="arrow-muted" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0 0 L10 5 L0 10 Z" fill="#afcbe2"/>
+      <path d="M0,0 L10,5 L0,10 Z" fill="#a5bcd4"/>
     </marker>
   </defs>
 
-  <rect width="800" height="1230" rx="24" fill="url(#background)"/>
-  <circle cx="745" cy="38" r="160" fill="#59a4e1" opacity="0.1"/>
-  <circle cx="38" cy="1160" r="170" fill="#90bcf7" opacity="0.08"/>
+  <rect width="1200" height="680" rx="26" fill="url(#background)"/>
+  <circle cx="1085" cy="85" r="155" fill="#59a4e1" opacity="0.08"/>
+  <circle cx="110" cy="620" r="190" fill="#90bcf7" opacity="0.06"/>
 
-  <g font-family="Arial, Helvetica, sans-serif">
-    <text x="48" y="56" fill="#ffffff" font-size="30" font-weight="700">From observations to</text>
-    <text x="48" y="93" fill="#ffffff" font-size="30" font-weight="700">interpretable climate physics</text>
-    <text x="48" y="126" fill="#c7e3f4" font-size="18">A continuous loop for climate-model equation discovery</text>
+  <text x="60" y="66" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">From observations to interpretable climate physics</text>
+  <text x="60" y="99" fill="#b8d6ec" font-family="Arial, Helvetica, sans-serif" font-size="17">MOSAIC connects scientific reasoning, differentiable simulation, and real-world evaluation in a continuous loop.</text>
 
-    <!-- Connectors sit behind the cards. -->
-    <path d="M400 345 V384" fill="none" stroke="#8ed3fa" stroke-width="5" marker-end="url(#arrow)"/>
-    <path d="M400 580 V619" fill="none" stroke="#8ed3fa" stroke-width="5" marker-end="url(#arrow)"/>
-    <path d="M400 815 V854" fill="none" stroke="#8ed3fa" stroke-width="5" marker-end="url(#arrow)"/>
-
-    <!-- 01: Evidence -->
-    <rect x="65" y="160" width="670" height="185" rx="18" fill="#ffffff" stroke="#d0e5f4" stroke-width="2"/>
-    <path d="M83 160 H717" stroke="#67b8ea" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="112" cy="211" r="25" fill="#eaf6fd"/>
-    <text x="112" y="218" text-anchor="middle" fill="#176ca9" font-size="20" font-weight="700">01</text>
-    <text x="155" y="220" fill="#11375a" font-size="27" font-weight="700">Evidence</text>
-    <line x1="95" y1="244" x2="705" y2="244" stroke="#dae7f3" stroke-width="2"/>
-    <text x="95" y="284" fill="#335a78" font-size="20" font-weight="700">Observations</text>
-    <text x="95" y="317" fill="#526f89" font-size="17">MODIS · ARM · ERA5 · LASSO</text>
-    <text x="425" y="284" fill="#335a78" font-size="20" font-weight="700">Fine-scale models</text>
-    <text x="425" y="317" fill="#526f89" font-size="17">ClimSim and process cases</text>
-
-    <!-- 02: Discover -->
-    <rect x="65" y="395" width="670" height="185" rx="18" fill="#ffffff" stroke="#d0e5f4" stroke-width="2"/>
-    <path d="M83 395 H717" stroke="#79b4ed" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="112" cy="446" r="25" fill="#edf5fc"/>
-    <text x="112" y="453" text-anchor="middle" fill="#246ab5" font-size="20" font-weight="700">02</text>
-    <text x="155" y="455" fill="#11375a" font-size="27" font-weight="700">Discover</text>
-    <line x1="95" y1="479" x2="705" y2="479" stroke="#dae7f3" stroke-width="2"/>
-    <text x="95" y="519" fill="#335a78" font-size="20" font-weight="700">Agentic reasoning</text>
-    <text x="95" y="552" fill="#526f89" font-size="17">Hypotheses and variables</text>
-    <text x="425" y="519" fill="#335a78" font-size="20" font-weight="700">Symbolic regression</text>
-    <text x="425" y="552" fill="#526f89" font-size="17">Interpretable equations</text>
-
-    <!-- 03: Integrate -->
-    <rect x="65" y="630" width="670" height="185" rx="18" fill="#ffffff" stroke="#d0e5f4" stroke-width="2"/>
-    <path d="M83 630 H717" stroke="#8da9f0" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="112" cy="681" r="25" fill="#eef3fd"/>
-    <text x="112" y="688" text-anchor="middle" fill="#3e65a8" font-size="20" font-weight="700">03</text>
-    <text x="155" y="690" fill="#11375a" font-size="27" font-weight="700">Integrate</text>
-    <line x1="95" y1="714" x2="705" y2="714" stroke="#dae7f3" stroke-width="2"/>
-    <text x="95" y="754" fill="#335a78" font-size="20" font-weight="700">Differentiable JAX</text>
-    <text x="95" y="787" fill="#526f89" font-size="17">Modular implementations</text>
-    <text x="425" y="754" fill="#335a78" font-size="20" font-weight="700">JAX-GCM rollouts</text>
-    <text x="425" y="787" fill="#526f89" font-size="17">Gradient-based tuning</text>
-
-    <!-- 04: Evaluate -->
-    <rect x="65" y="865" width="670" height="185" rx="18" fill="#ffffff" stroke="#d0e5f4" stroke-width="2"/>
-    <path d="M83 865 H717" stroke="#a6baf4" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="112" cy="916" r="25" fill="#f2f5fd"/>
-    <text x="112" y="923" text-anchor="middle" fill="#556bb0" font-size="20" font-weight="700">04</text>
-    <text x="155" y="925" fill="#11375a" font-size="27" font-weight="700">Evaluate</text>
-    <line x1="95" y1="949" x2="705" y2="949" stroke="#dae7f3" stroke-width="2"/>
-    <text x="95" y="989" fill="#335a78" font-size="20" font-weight="700">Withheld observations</text>
-    <text x="95" y="1022" fill="#526f89" font-size="17">Accuracy across regimes</text>
-    <text x="425" y="989" fill="#335a78" font-size="20" font-weight="700">Long simulations</text>
-    <text x="425" y="1022" fill="#526f89" font-size="17">Stability and benchmark skill</text>
-
-    <!-- Results return to the discovery stage. -->
-    <path d="M400 1050 V1090 H30 V487 H53" fill="none" stroke="url(#feedback)" stroke-width="4" marker-end="url(#arrow)"/>
-    <rect x="210" y="1064" width="380" height="48" rx="24" fill="#103e6a" stroke="#79c4ef" stroke-width="2"/>
-    <text x="400" y="1094" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">Results guide the next experiment</text>
-
-    <!-- Longer-term observation design. -->
-    <path d="M650 1050 V1145" fill="none" stroke="#afcbe2" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#arrow-muted)"/>
-    <rect x="65" y="1140" width="670" height="65" rx="15" fill="#103e6a" stroke="#79c4ef" stroke-width="1.5"/>
-    <text x="94" y="1166" fill="#a9d8f3" font-size="15" font-weight="700" letter-spacing="1">LONGER HORIZON</text>
-    <text x="94" y="1191" fill="#ffffff" font-size="18">Uncertainty gradients guide future observations</text>
+  <!-- Input card -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="162" width="220" height="302" rx="18" fill="#ffffff"/>
   </g>
+  <rect x="55" y="162" width="220" height="8" rx="4" fill="#67b8ea"/>
+  <circle cx="91" cy="209" r="18" fill="#eaf6fd"/>
+  <path d="M81 212 C86 199, 96 199, 101 212 M79 216 H104" fill="none" stroke="#176ca9" stroke-width="3" stroke-linecap="round"/>
+  <text x="120" y="216" fill="#11375a" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">Evidence</text>
+  <text x="82" y="262" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Observations</text>
+  <text x="82" y="289" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">MODIS · ARM · ERA5</text>
+  <text x="82" y="312" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">LASSO · in-situ data</text>
+  <line x1="82" y1="340" x2="248" y2="340" stroke="#dae7f3"/>
+  <text x="82" y="375" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Fine-scale models</text>
+  <text x="82" y="402" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">ClimSim and process-level</text>
+  <text x="82" y="425" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">training cases</text>
+
+  <!-- Discovery card -->
+  <g filter="url(#shadow)">
+    <rect x="345" y="162" width="220" height="302" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="345" y="162" width="220" height="8" rx="4" fill="#79b4ed"/>
+  <circle cx="381" cy="209" r="18" fill="#edf5fc"/>
+  <path d="M373 209 H389 M381 201 V217 M375 203 L387 215 M387 203 L375 215" stroke="#246ab5" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="410" y="216" fill="#11375a" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">Discover</text>
+  <text x="372" y="262" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Agentic reasoning</text>
+  <text x="372" y="289" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">Hypotheses and variables</text>
+  <line x1="372" y1="318" x2="538" y2="318" stroke="#dae7f3"/>
+  <text x="372" y="352" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Symbolic regression</text>
+  <text x="372" y="379" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">Interpretable equations</text>
+  <line x1="372" y1="408" x2="538" y2="408" stroke="#dae7f3"/>
+  <text x="372" y="438" fill="#246ab5" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">PHYSICS CHECKS</text>
+
+  <!-- Integrate card -->
+  <g filter="url(#shadow)">
+    <rect x="635" y="162" width="220" height="302" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="635" y="162" width="220" height="8" rx="4" fill="#8da9f0"/>
+  <circle cx="671" cy="209" r="18" fill="#eef3fd"/>
+  <path d="M661 205 H681 M661 213 H681 M667 199 V219 M675 199 V219" stroke="#3e65a8" stroke-width="2" stroke-linecap="round"/>
+  <text x="700" y="216" fill="#11375a" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">Integrate</text>
+  <text x="662" y="262" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Differentiable JAX</text>
+  <text x="662" y="289" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">Modular implementations</text>
+  <line x1="662" y1="318" x2="828" y2="318" stroke="#dae7f3"/>
+  <text x="662" y="352" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">JAX-GCM rollouts</text>
+  <text x="662" y="379" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">Gradient-based tuning</text>
+  <line x1="662" y1="408" x2="828" y2="408" stroke="#dae7f3"/>
+  <text x="662" y="438" fill="#3e65a8" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">GLOBAL MODEL TEST</text>
+
+  <!-- Evaluation card -->
+  <g filter="url(#shadow)">
+    <rect x="925" y="162" width="220" height="302" rx="18" fill="#ffffff"/>
+  </g>
+  <rect x="925" y="162" width="220" height="8" rx="4" fill="#a6baf4"/>
+  <circle cx="961" cy="209" r="18" fill="#f2f5fd"/>
+  <path d="M952 212 L958 218 L971 201" fill="none" stroke="#556bb0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="990" y="216" fill="#11375a" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">Evaluate</text>
+  <text x="952" y="262" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Withheld data</text>
+  <text x="952" y="289" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">Observational accuracy</text>
+  <line x1="952" y1="318" x2="1118" y2="318" stroke="#dae7f3"/>
+  <text x="952" y="352" fill="#335a78" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Long simulations</text>
+  <text x="952" y="379" fill="#627d94" font-family="Arial, Helvetica, sans-serif" font-size="14">Stability and robustness</text>
+  <line x1="952" y1="408" x2="1118" y2="408" stroke="#dae7f3"/>
+  <text x="952" y="438" fill="#556bb0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">BENCHMARK SKILL</text>
+
+  <!-- Main arrows -->
+  <path d="M278 313 H333" fill="none" stroke="#86c8f2" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M568 313 H623" fill="none" stroke="#86c8f2" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M858 313 H913" fill="none" stroke="#86c8f2" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- Feedback loop -->
+  <path d="M1035 480 V525 Q1035 552 1008 552 H458 Q431 552 431 525 V478" fill="none" stroke="url(#accent)" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="590" y="526" width="302" height="52" rx="26" fill="#103e6a" stroke="#79c4ef" stroke-width="1.5"/>
+  <text x="741" y="558" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Results guide the next experiment</text>
+
+  <!-- Future observation branch -->
+  <path d="M1035 480 V620 H277" fill="none" stroke="#a5bcd4" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#arrow-muted)"/>
+  <text x="655" y="647" text-anchor="middle" fill="#b8d6ec" font-family="Arial, Helvetica, sans-serif" font-size="14">Longer horizon: uncertainty gradients identify high-value future observations</text>
 </svg>
