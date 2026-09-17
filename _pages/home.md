@@ -16,7 +16,7 @@ intro:
 #   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
 #   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
 feature_row:
-  - image_path: "/assets/images/MOSAIC_logo.png"
+  - image_path: "/assets/images/MOSAIC_logo_transparent.png"
     alt: "MOSAIC logo with stylized ocean waves, clouds, and code braces"
     title: "MOSAIC"
     excerpt: "Discovering interpretable climate-model equations from observations with symbolic AI."
