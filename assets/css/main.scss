@@ -156,7 +156,7 @@ ol.bibliography {
     color: #31506a;
 
     > h2 {
-      margin-top: 1.4em;
+      margin-top: 0.7em;
       padding-bottom: 0.55em;
       color: var(--mosaic-ink);
       border-bottom: 2px solid var(--mosaic-line);
@@ -164,6 +164,7 @@ ol.bibliography {
     }
 
     > h3 {
+      margin-top: 1em;
       color: var(--mosaic-ink);
     }
   }
@@ -176,7 +177,7 @@ ol.bibliography {
   }
 
   .mosaic-workflow {
-    margin: 3em 0 1.5em;
+    margin: 1.5em 0;
 
     img {
       display: block;
@@ -250,7 +251,7 @@ ol.bibliography {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1em;
-    margin: 1.7em 0 2.5em;
+    margin: 1.7em 0 1.25em;
 
     div {
       display: flex;
@@ -323,7 +324,7 @@ ol.bibliography {
     align-items: center;
     justify-content: space-between;
     gap: 2em;
-    margin: 3.5em 0;
+    margin: 1.75em 0;
     padding: clamp(1.5em, 4vw, 2.7em);
     color: #ffffff;
     background: linear-gradient(120deg, #0a284c, #176baf);
