@@ -124,20 +124,19 @@ ol.bibliography {
   .mosaic-header__identity {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
+    gap: clamp(0.75rem, 2vw, 1.25rem);
+
+    @media (max-width: 380px) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
 
-  .mosaic-header__logo {
+  .mosaic-header__emblem {
     display: block;
     flex: none;
-    width: clamp(4.5rem, 9vw, 7.5rem);
+    width: clamp(4.5rem, 8vw, 6.5rem);
     height: auto;
-    margin-left: auto;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 12px 28px rgba(4, 20, 42, 0.2);
   }
 
   .mosaic-header__eyebrow {
