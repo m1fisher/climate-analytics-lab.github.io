@@ -125,6 +125,11 @@ ol.bibliography {
     display: flex;
     align-items: center;
     gap: clamp(0.75rem, 2vw, 1.25rem);
+    margin: 0.65rem 0 0.5rem;
+
+    h1 {
+      margin: 0;
+    }
 
     @media (max-width: 380px) {
       align-items: flex-start;
