@@ -1,6 +1,6 @@
 ---
 title: " "
-layout: posts
+layout: projects-list
 permalink: /projects/
 entries_layout: grid
 classes: wide
