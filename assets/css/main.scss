@@ -355,14 +355,24 @@ ol.bibliography {
   }
 
   .mosaic-support {
-    max-width: 560px;
-    margin: 1.5em 0 2em;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 1057 / 395;
+    margin: 1em 0;
     background: #ffffff;
 
+    // Display the logo's ink bounds with 24px of source-image padding.
+    // Crop box: x=345, y=378, width=1057, height=395 in the 1760x1144 PNG.
     img {
+      position: absolute;
       display: block;
-      width: 100%;
+      width: 166.509%;
+      max-width: none;
       height: auto;
+      left: -32.64%;
+      top: -95.696%;
     }
   }
 

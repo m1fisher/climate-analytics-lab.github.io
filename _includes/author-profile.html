@@ -20,6 +20,11 @@
         {{ author.bio | markdownify }}
       </div>
     {% endif %}
+    {% if page.support_logo %}
+      <div class="mosaic-support">
+        <img src="{{ '/assets/images/google.org_awardee_logo2.png' | relative_url }}" width="1760" height="1144" alt="With support from Google.org" />
+      </div>
+    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
