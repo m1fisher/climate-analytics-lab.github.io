@@ -354,6 +354,18 @@ ol.bibliography {
     }
   }
 
+  .mosaic-support {
+    max-width: 560px;
+    margin: 1.5em 0 2em;
+    background: #ffffff;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .mosaic-callout__eyebrow {
     color: #a8dafa !important;
     font-size: 0.75em;
